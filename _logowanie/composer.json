@@ -1,0 +1,17 @@
+{
+    "name": "marcinwrzos/htdocs",
+    "authors": [{
+        "name": "Marcin Wrz",
+        "email": "wm44557@zut.edu.pl"
+    }],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/",
+            "Application\\Controller\\": "src/Controller"
+        }
+    }
+
+}

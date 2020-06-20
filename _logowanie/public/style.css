@@ -428,3 +428,8 @@ td>a:hover {
     height: 40px;
     background-color: lightgray;
 }
+
+td img {
+    max-width: 160px;
+    max-height: 160px;
+}

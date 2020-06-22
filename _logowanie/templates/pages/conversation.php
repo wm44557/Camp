@@ -34,10 +34,9 @@
                 <?php if ($_SESSION['id'] == $y->chat_id) : ?>
                     <?php if ($_SESSION['user'] == $y->login) : ?>
 
-                        <div class="mg0"><?php echo 'User: ' . $y->login . '__: ' . $y->message . '______id:_' . $y->id; ?> </div>
+                        <div class="mg0"><?php echo 'User: ' . $y->login . '__: ' . htmlentities($y->message)  . '______id:_' . $y->id; ?> </div>
                     <?php else : ?>
-                        <div class="mg1"><?php echo 'User: ' . $y->login . '__: ' . $y->message . '______id:_' . $y->id; ?> </div>
-
+                        <div class="mg1"><?php echo 'User: ' . $y->login . '__: ' . htmlentities($y->message) . '______id:_' . $y->id; ?> </div>
                     <?php endif; ?>
                 <?php endif; ?>
             <?php endforeach; ?>

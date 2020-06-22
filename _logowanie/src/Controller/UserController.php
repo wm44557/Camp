@@ -264,7 +264,6 @@ class UserController
         $id = (int) $this->request->requestGet('id');
         $_SESSION['id'] = $id;
         $message = $this->request->requestPost('send');
-
         $res = $this->client->request('POST', 'http://tank.iai-system.com/api/chat/get', [
             'form_params' => [
                 'login' => "$login",
